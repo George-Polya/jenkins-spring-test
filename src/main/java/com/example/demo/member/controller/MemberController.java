@@ -22,4 +22,10 @@ public class MemberController {
     public ResponseEntity<?> test(){
         return ResponseEntity.ok(memberService.findAll());
     }
+
+    @GetMapping("/test2")
+    public ResponseEntity<?> test2(){
+        return ResponseEntity.ok("test2");
+    }
+
 }
